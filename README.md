@@ -1,24 +1,27 @@
----
-output: github_document
----
+
 # salesAnalytics
 
-Celem pakietu `salesAnalytics` jest przekształcenie surowych danych sprzedażowych z Kaggle (Store Sales) w użyteczne wnioski biznesowe. Pakiet umożliwia wczytywanie, czyszczenie, analizę i prognozowanie szeregów czasowych.
+Celem pakietu `salesAnalytics` jest przekształcenie surowych danych
+sprzedażowych z Kaggle (Store Sales) w użyteczne wnioski biznesowe.
+Pakiet umożliwia wczytywanie, czyszczenie, analizę i prognozowanie
+szeregów czasowych.
 
 ## Instalacja
 
-Możesz zainstalować wersję deweloperską pakietu z GitHuba za pomocą komendy:
+Możesz zainstalować wersję deweloperską pakietu z GitHuba za pomocą
+komendy:
 
-```r
+``` r
 # install.packages("devtools")
 devtools::install_github("gregor719/salesAnalytics")
 ```
 
 ## Pełny workflow analityczny (Przykład użycia)
 
-Poniżej znajduje się skrypt pokazujący, jak przeprowadzić analizę od A do Z przy użyciu pakietu:
+Poniżej znajduje się skrypt pokazujący, jak przeprowadzić analizę od A
+do Z przy użyciu pakietu:
 
-```r
+``` r
 library(salesAnalytics)
 
 # 1. Wczytanie danych (pamiętaj, aby pliki csv z Kaggle były w folderze roboczym)

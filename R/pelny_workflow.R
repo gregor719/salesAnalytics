@@ -1,30 +1,9 @@
----
-output: github_document
----
-# salesAnalytics
-
-Celem pakietu `salesAnalytics` jest przekształcenie surowych danych sprzedażowych z Kaggle (Store Sales) w użyteczne wnioski biznesowe. Pakiet umożliwia wczytywanie, czyszczenie, analizę i prognozowanie szeregów czasowych.
-
-## Instalacja
-
-Możesz zainstalować wersję deweloperską pakietu z GitHuba za pomocą komendy:
-
-```r
-# install.packages("devtools")
-devtools::install_github("gregor719/salesAnalytics")
-```
-
-## Pełny workflow analityczny (Przykład użycia)
-
-Poniżej znajduje się skrypt pokazujący, jak przeprowadzić analizę od A do Z przy użyciu pakietu:
-
-```r
 library(salesAnalytics)
 
 # 1. Wczytanie danych (pamiętaj, aby pliki csv z Kaggle były w folderze roboczym)
 dane_surowe <- load_sales_data(
-  train_path = "train.csv", 
-  stores_path = "stores.csv", 
+  train_path = "train.csv",
+  stores_path = "stores.csv",
   holidays_path = "holidays_events.csv"
 )
 
@@ -46,4 +25,3 @@ print(analiza_quito$wykres)
 
 # 6. Prognozowanie ogólnego trendu (ARIMA i Prophet)
 prognoza <- create_prognosis(dane_czyste, horizon = 30)
-```
