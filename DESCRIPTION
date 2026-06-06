@@ -15,3 +15,5 @@ Imports:
     prophet,
     readr,
     stats
+URL: https://github.com/gregor719/salesAnalytics
+BugReports: https://github.com/gregor719/salesAnalytics/issues
