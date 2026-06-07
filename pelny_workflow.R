@@ -13,6 +13,8 @@ print(raport_jakosci)
 
 # 3. Czyszczenie danych (obsługa NA)
 dane_czyste <- clean_sales_ts(dane_surowe)
+raport_jakosci <- validate_sales_ts(dane_czyste)
+print(raport_jakosci)
 
 # 4. Generowanie podsumowania dla zarządu
 podsumowanie <- create_management_summary(dane_czyste)
@@ -25,3 +27,4 @@ print(analiza_quito$wykres)
 
 # 6. Prognozowanie ogólnego trendu (ARIMA i Prophet)
 prognoza <- create_prognosis(dane_czyste, horizon = 30)
+print(prognoza)
